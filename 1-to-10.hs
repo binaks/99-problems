@@ -50,7 +50,7 @@ compress [] = []
 compress [x] = [x]
 compress (x:(y:ys))
     | x == y = compress (y:ys)
-	| otherwise = x : compress (y:ys)
+    | otherwise = x : compress (y:ys)
 
 --9
 pack :: Eq a => [a] -> [[a]]
